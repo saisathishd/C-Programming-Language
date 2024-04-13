@@ -1,0 +1,41 @@
+//Constant.. 
+#include <stdio.h>
+
+int main()
+{
+    //1st program..
+    float pi=3.14;
+    pi=20.5;
+    printf("pi=%f",pi);
+    
+    //2nd program..
+    const float pi=3.14;
+    pi=20.5;
+    printf("pi=%f",pi);
+    
+    //3rd program..
+    const int id=1234;
+    const char name[]="ravi",gender='M';
+    const float pi=3.14;
+    printf("id=%d\n",id);
+    printf("name=%s\n",name);
+    printf("gender=%c\n",gender);
+    printf("pi=%f\n",pi);
+    return 0;
+    
+}
+
+//1st program
+Output:
+pi=20.500000
+
+//2nd program 
+Output:
+Error:cannot modify a const object in function main
+
+//3rd program
+Output:
+id=1234
+name=ravi
+gender=M
+pi=3.140000

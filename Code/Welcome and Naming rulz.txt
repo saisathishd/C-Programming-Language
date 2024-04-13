@@ -1,0 +1,59 @@
+//welcome program 
+#include <stdio.h>
+
+int main()
+{
+    //naming rulz
+    int v1;  //valid variable should start with alphabet or underscore[_].
+    int _v1; //valid.
+    int 1v;  //invalid becz not allowed to start with numbers.
+    int  a;  //invalid becz space not allowed.
+    int abcd123; //valid.
+    int a b; //invalid.
+    int ab;  // valid.
+    int a#;  //special characters are not allowed except underscore[_].
+    int float;//invalid becoz keywords not allowed.
+    int Float;//valid becoz identify are case sensitive ie lower and uper are different.
+    
+    
+    printf("Welcome to C programing language...\n");
+    
+    //1st program(Demo)..
+    int a=10;
+    int A=25;
+    printf("a=%d A=%d\n",a,A);
+    
+    //2nd program(Demo)..
+    int a=10;
+    //int a=25;
+    printf("a=%d",a);
+    
+    //3rd program(Demo)..
+    int x; //variable declaration..
+    x=100; //initialization..
+    x=300; //initialization..
+    printf("x=%d",x);
+    
+    //4th program(Demo)..
+    int rama=100; //declaration & initialization
+    float rama=2.5; //declaration & initialization
+    printf("rama=%d",rama);
+    return 0;
+    
+}
+//1st program...
+Output:
+Welcome to C programing language...
+a=10 A=25
+
+//2nd program...
+Output:
+Error: Redeclaration of 'a' in function main.
+
+//3rd program...
+Output:
+x=300
+
+//4th program
+Output:
+Error:Redeclaration of 'rama' in function main.
